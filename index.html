@@ -400,42 +400,43 @@
         <form class="modal-form">
           <label class="modal-label">
             <span class="modal-label-text">Имя</span>            
-            <div class="input-wrapper">
+            
             <input class="modal-input" type="text" name="user-name" />
               <svg class="input-icon" width="18" height="18">
                 <use href="./images/icons/symbol-defs.svg#icon-person-black"></use>
             </svg>
-            </div>
+            
           </label>
         
           <label class="modal-label">
-            <span class="modal-label-text">Телефон</span>   
-            <div class="input-wrapper">
+            <span class="modal-label-text">Телефон</span>             
             <input class="modal-input" type="tel" name="user-tel" />
             <svg class="input-icon" width="18" height="18">
               <use href="./images/icons/symbol-defs.svg#icon-phone-black"></use>
-            </svg>
-            </div>
+            </svg>            
           </label>
 
           <label class="modal-label">
-            <span class="modal-label-text">Почта</span> 
-            <div class="input-wrapper">
-            <input class="modal-input" type='email name="user-mail" />
+            <span class="modal-label-text">Почта</span>             
+            <input class="modal-input" type="email" name="user-mail" />
             <svg class="input-icon" width="18" height="18">
               <use href="./images/icons/symbol-defs.svg#icon-email-black"></use>
-            </svg> 
-            </div>
+            </svg>             
           </label>
 
           <label class="modal-label">
             <span class="modal-label-text">Комментарий</span> 
-            <textarea class="modal-text-comment" name="coment"  cols="30" rows="10" placeholder="Введите текст" ></textarea>
-                          
+            <textarea class="modal-text-comment" name="comment"  cols="30" rows="10" placeholder="Введите текст" ></textarea>                          
           </label>
+
           <label class="modal-label">
             <input class="modal-input-checkbox" type="checkbox" name="checkbox" />
-            <span modal-text-checkbox>Соглашаюсь с рассылкой и принимаю</span>  <a class="modal-contruct-conditions" href="Условия договора"></a> 
+            <span>
+              <svg class="input-icon-checkbox" width="16" height="15">
+                <use href=""></use>
+              </svg>
+            </span>
+            <span modal-text-checkbox>Соглашаюсь с рассылкой и принимаю <a class="modal-form-link" href="">Условия договора</a> </span> 
           </label>
           
           <button class="modal-button" type="submit">Отправить</button>
