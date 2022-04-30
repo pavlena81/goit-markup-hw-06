@@ -398,44 +398,44 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <label class="modal-text">
-            Имя           
+          <label class="modal-label">
+            <span class="modal-label-text">Имя</span>            
             <div class="input-wrapper">
-            <input class="modal-input" type="Имя" name="Имя" />
+            <input class="modal-input" type="text" name="user-name" />
               <svg class="input-icon" width="18" height="18">
                 <use href="./images/icons/symbol-defs.svg#icon-person-black"></use>
             </svg>
             </div>
           </label>
         
-          <label class="modal-text">
-            Телефон   
+          <label class="modal-label">
+            <span class="modal-label-text">Телефон</span>   
             <div class="input-wrapper">
-            <input class="modal-input" type="Телефон" name="Телефон" />
+            <input class="modal-input" type="tel" name="user-tel" />
             <svg class="input-icon" width="18" height="18">
               <use href="./images/icons/symbol-defs.svg#icon-phone-black"></use>
             </svg>
             </div>
           </label>
 
-          <label class="modal-text">
-            Почта
+          <label class="modal-label">
+            <span class="modal-label-text">Почта</span> 
             <div class="input-wrapper">
-            <input class="modal-input" type="Почта" name="Почта" />
+            <input class="modal-input" type='email name="user-mail" />
             <svg class="input-icon" width="18" height="18">
               <use href="./images/icons/symbol-defs.svg#icon-email-black"></use>
             </svg> 
             </div>
           </label>
 
-          <label class="modal-text">
-            Комментарий
-            <textarea class="modal-text-comment" name="Комментарий" id="" cols="30" rows="10" placeholder="Введите текст" ></textarea>
+          <label class="modal-label">
+            <span class="modal-label-text">Комментарий</span> 
+            <textarea class="modal-text-comment" name="coment"  cols="30" rows="10" placeholder="Введите текст" ></textarea>
                           
           </label>
-          <label class="modal-text-checkbox">
-            <input class="modal-input-checkbox" type="checkbox" name="условия договора" />
-            Соглашаюсь с рассылкой и принимаю <span class="modal-contruct-conditions">Условия договора</span> 
+          <label class="modal-label">
+            <input class="modal-input-checkbox" type="checkbox" name="checkbox" />
+            <span modal-text-checkbox>Соглашаюсь с рассылкой и принимаю</span>  <a class="modal-contruct-conditions" href="Условия договора"></a> 
           </label>
           
           <button class="modal-button" type="submit">Отправить</button>
