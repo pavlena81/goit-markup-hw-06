@@ -807,8 +807,9 @@ img {
 
   color: var(--main-text-color);
 }
-.modal-form {
-}
+
+/* .modal-form {
+} */
 
 .modal-text {
   margin-bottom: 4px;
