@@ -774,6 +774,7 @@ img {
   background-color: var(--backdrop-bg-color);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 100;
 }
 
 .backdrop.is-hidden .modal {
@@ -821,7 +822,7 @@ img {
 
 .modal-label-text {
   display: block;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
 
   font-size: 12px;
   line-height: 1.17;
@@ -860,7 +861,11 @@ img {
   fill: var(--accent-color);
 }
 
-.modal-text-comment {
+.comment {
+  margin-bottom: 20px;
+}
+
+.modal-comment {
   width: 100%;
   padding: 12px 16px;
 
@@ -874,12 +879,22 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-text-comment:hover,
-.modal-text-comment:focus {
+.modal-comment:hover,
+.modal-comment:focus {
   border-color: var(--accent-color);
 }
 
-.modal-text-checkbox {
+.icon-checkbox {
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.modal-checkbox:checked + .icon-checkbox {
+  background-color: var(--accent-color);
+}
+
+.modal-checkbox-agreement {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -943,13 +958,17 @@ img {
 }
 
 .modal-close-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 11px;
   height: 11px;
+  fill: var(--logo-text-color);
+}
+
+.modal-close:focus + .modal-close-icon {
+  color: var(--accent-color);
 }
 
 .modal-close:hover,
