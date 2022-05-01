@@ -636,11 +636,19 @@ img {
   line-height: 1.25;
 
   background-color: var(--accent-bg-color);
+  color: var(--accessorial-text-color);
   outline: transparent;
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscription-input:hover,
+.footer-subscription-input:focus {
+  border-color: var(--accent-color);
 }
 
 .subscription-btn {
@@ -957,13 +965,12 @@ img {
 }
 
 .modal-custom-checkbox {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
   width: 16px;
   height: 15px;
-  margin-right: 8px;
 
   border: 2px solid var(--main-text-color);
   border-radius: 2px;
@@ -982,7 +989,7 @@ img {
 }
 
 .modal-checkbox-agreement {
-  display: flex;
+  display: inline-flex;
 
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1074,4 +1081,9 @@ img {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+.visually-hidden {
+  position: absolute;
+  transform: scale(0);
+  opacity: 0;
 }

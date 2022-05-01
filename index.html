@@ -389,7 +389,7 @@
           <div class="footer-subscription">
             <p class="footer-subscription-title title">Подпишитесь на рассылку</p>
             <div class="subscription">
-            <form  class="footer-subscription-form">
+            <form action="URL" class="footer-subscription-form">
               <label class="footer-label">
                 <input class="footer-subscription-input" type="email" name="email" placeholder="E-mail" required />
               </label>
@@ -402,9 +402,7 @@
             </div>
           </div>
 
-        </div> 
-
-          
+        </div>           
         
     </footer>  
     <div class="backdrop is-hidden" data-modal>
@@ -447,17 +445,21 @@
             <textarea class="modal-comment" name="comment" rows="10" placeholder="Введите текст" ></textarea>                          
           </label>
 
-          <label class="modal-label">
-            <div class="checkbox">
-            <input class="modal-checkbox is-hidden" type="checkbox" name="checkbox" />
-            
-            <span class="modal-custom-checkbox">
+          <label class="modal-label">            
+            <input class="modal-checkbox visually-hidden" 
+             id="checkbox"
+             type="checkbox" name="checkbox" 
+             tabindex="-1"
+             aria-hidden="true"             
+            /> 
+            <span class="modal-custom-checkbox"
+             tabindex="0" role="checkbox" aria-labelledby="checkbox" aria-checked="true">
               <svg class="icon-checkbox" width="16" height="15">
                 <use href="./images/icons/symbol-defs.svg#icon-checked"></use>
               </svg>
             </span>
-            <span class="modal-checkbox-agreement">Соглашаюсь с рассылкой и принимаю <a class="modal-form-link" href="">Условия договора</a> </span> 
-            </div>
+            <span class="modal-checkbox-agreement">Соглашаюсь с рассылкой и принимаю&nbsp;<a class="modal-form-link" href="">Условия договора</a></span> 
+            
           </label>
           
           <button class="modal-button" type="submit">Отправить</button>
