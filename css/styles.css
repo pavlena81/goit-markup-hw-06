@@ -619,11 +619,12 @@ img {
 /* footer subscription form */
 
 .footer-subscription {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
-.subscription {
+.footer-subscription-form {
   display: flex;
+  margin-left: auto;
 }
 
 .footer-subscription-input {
@@ -887,16 +888,19 @@ img {
 .modal-label {
   display: block;
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 
 .modal-label:last-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
 .modal-label-text {
   display: block;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 
   font-size: 12px;
   line-height: 1.17;
@@ -908,7 +912,7 @@ img {
   height: 40px;
 
   padding: 0;
-  padding-left: 30px;
+  padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -941,6 +945,7 @@ img {
 
 .modal-comment {
   width: 100%;
+  height: 120px;
   padding: 12px 16px;
 
   outline: transparent;
@@ -968,6 +973,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-right: 7px;
 
   width: 16px;
   height: 15px;
@@ -1003,7 +1009,7 @@ img {
 }
 
 .modal-button {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
 
